@@ -1,0 +1,63 @@
+.profile {
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 0px 17px 0px;
+
+        &__name {
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.1;
+            color: #000000;
+        }
+    }
+
+    &__form {
+        border: 1px solid #F3F3F3;
+        border-radius: 8px;
+        padding: 20px 6px 20px 12px;
+        position: relative;
+
+        &__comment {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-family: 'Roboto';
+                font-weight: 400;
+                font-size: 8px;
+                line-height: 1.1;
+                color: #000000;
+                margin: 0px 0px 3px 0px;
+            }
+
+            textarea {
+                background-color: #FFFFFF;
+                border: 1px solid #D8D8D8;
+                border-radius: 5px;
+                resize: none;
+                outline: none;
+                padding: 5px 10px;
+                font-family: 'Roboto';
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 1.2;
+                color: #000000;
+                min-height: 3.6rem;
+
+                &:disabled {
+                    cursor: auto;
+                    color: rgba(0, 0, 0, 0.3);
+                }
+            }
+        }
+    }
+}
+
+.loading,
+.error {
+    composes: loading from '../../components/List/List.module.scss';
+}

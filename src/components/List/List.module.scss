@@ -1,0 +1,35 @@
+.list {
+    &__name {
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1;
+        color: #000000;
+        margin: 0px 0px 17px 0px;
+    }
+
+    &__items {
+        margin: 0px 0px 10px 0px;
+    }
+
+    &__length {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.2;
+        color: #000000;
+        text-align: end;
+    }
+}
+
+.loading,
+.error {
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

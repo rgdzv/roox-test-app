@@ -1,0 +1,40 @@
+.profile__input {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+        margin: 0px 0px 10px 0px;
+    }
+
+    label,
+    input {
+        font-family: 'Roboto';
+        font-weight: 400;
+        line-height: 1.1;
+        color: #000000;
+    }
+
+    label {
+        font-size: 8px;
+        margin: 0px 0px 3px 0px;
+    }
+
+    input {
+        font-size: 10px;
+        background-color: #FFFFFF;
+        border: 1px solid #D8D8D8;
+        border-radius: 5px;
+        padding: 5px 10px;
+        max-width: 50%;
+        outline: none;
+
+        &:disabled {
+            cursor: auto;
+            color: rgba(0, 0, 0, 0.3);
+        }
+
+        &:invalid {
+            border-color: #D91313;
+        }
+    }
+}

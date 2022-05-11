@@ -1,0 +1,45 @@
+.button {
+    padding: 5px 15px;
+    background-color: #4B51EF;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1;
+    align-self: flex-start;
+    user-select: none;
+    cursor: pointer;
+    transition: background-color .2s linear;
+
+    &:hover {
+        background-color: lighten(#4B51EF, 5%); 
+    }
+
+    &:active {
+        background-color: darken(#4B51EF, 5%);
+        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.button__submit {
+    @extend .button;
+    background-color: #3fce23;
+    position:absolute;
+    bottom: -29px;
+    right: 0;
+    z-index: 2;
+
+    &:hover {
+        background-color: lighten(#52CF4F, 5%); 
+    }
+
+    &:active {
+        background-color: darken(#52CF4F, 5%);
+    }
+
+    &:disabled {
+        background: #AFAFAF;
+        cursor: auto;
+    }
+}
